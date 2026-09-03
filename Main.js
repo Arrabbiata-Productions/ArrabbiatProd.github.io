@@ -59,12 +59,20 @@ async function AddBanner(pID, pKeys){
             bannersInfo[lIndex].images.push(lPath);
         }
     }
-    
+
+    for (const lImage of lFullImageTrack.children) {
+
+        lImage.addEventListener('click', () => {
+
+            window.open(lImage.src, '_blank');
+
+        });
+    }
+
+
     ResetBanner(lIndex)
 
-    lFullImageTrack.addEventListener('animationiteration', () => {
-        ResetBanner(lIndex)
-    });
+    lFullImageTrack.addEventListener('animationiteration', () => ResetBanner(lIndex));
 }
 
 

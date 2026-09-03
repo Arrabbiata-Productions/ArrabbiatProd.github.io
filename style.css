@@ -235,6 +235,7 @@ body {
         box-sizing: border-box;
         transition: transform 0.4s ease, box-shadow 0.4s ease;
         will-change: transform;
+        cursor: pointer;
     }
 
         .image-track img:hover {
