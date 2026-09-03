@@ -1,0 +1,10 @@
+{
+  "scrollV1_0": {
+    "rootPath": "Images/Sequence/scrollV1_0",
+    "maxFrame": 45
+  },
+  "default": {
+    "rootPath": "0",
+    "maxFrame": 0
+  }
+}

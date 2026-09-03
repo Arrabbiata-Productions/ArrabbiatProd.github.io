@@ -1,5 +1,5 @@
 :root {
-    /* Palette plus colorée */
+    /* Palette plus colorï¿½e */
     --red: #E32500;
     --black: #050505;
     --white: #fdfdfd;
@@ -19,7 +19,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 90px; /* évite que la navbar cache les ancres */
+    scroll-padding-top: 90px; /* ï¿½vite que la navbar cache les ancres */
 }
 
 body {
@@ -128,7 +128,7 @@ body {
     align-items: flex-start;
     gap: 60px;
     padding: 40px;
-    margin; 205px;
+    margin: 205px;
 }
 
 
@@ -189,7 +189,7 @@ body {
     padding-top: 120px;
 }
 
-/* Winddrifters : titre centré */
+/* Winddrifters : titre centrï¿½ */
 
 .project-title-image {
     margin: 120px;
@@ -254,7 +254,7 @@ body {
     }
 }
 
-/* PROJECTS : plus vertical (empilé) */
+/* PROJECTS : plus vertical (empilï¿½) */
 
 .projects {
     display: flex;
@@ -294,7 +294,7 @@ body {
 
     .project-we-need-you h2 {
         line-height: 1.7;
-        color: white
+        color: white;
         margin-bottom: 15px;
     }
 
@@ -362,10 +362,9 @@ body {
 .section-title {
     color: var(--red);
     text-transform: uppercase;
-    padding-bottom: 18px;
+    padding: 25px 25px 18px;
     margin-right: 410px;
     margin-left: 410px;
-    padding:25px;
 }
 .contact-box {
     backdrop-filter: blur(10px);
