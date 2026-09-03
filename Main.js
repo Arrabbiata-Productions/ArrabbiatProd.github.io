@@ -1,4 +1,4 @@
-const SEQUENCES_PATH = `/Data/Sequence/Animations.json`;
+const SEQUENCES_PATH = `Data/Sequence/Animations.json`;
 
 let sequences = {};
 
