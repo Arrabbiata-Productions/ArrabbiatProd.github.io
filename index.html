@@ -23,6 +23,10 @@
         <!-- NAVBAR -->
         <nav class="navbar">
             <div class="navbar-inner">
+                <img src="Images/Sequence/scrollV1_0/frame_0001.png"
+                     id="sequence-scroll"
+                     alt=""
+                     style="max-width: 64px; width: 100%; height: auto;">
                 <div class="nav-logo">
                     ARRABBIATA PRODUCTION
                 </div>
@@ -229,11 +233,17 @@
 
                 <form action="[formsubmit.co](https://formsubmit.co/arrabbiataprod@gmail.com)" method="POST">
 
-                    <input type="text" name="name" placeholder="Nom" required>
+                    <label>
+                        <input type="text" name="name" placeholder="Nom" required>
+                    </label>
 
-                    <input type="email" name="email" placeholder="Email" required>
+                    <label>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </label>
 
-                    <textarea name="message" placeholder="Votre message..." required></textarea>
+                    <label>
+                        <textarea name="message" placeholder="Votre message..." required></textarea>
+                    </label>
 
                     <button type="submit">
                         ENVOYER
@@ -253,16 +263,13 @@
 
     </div>
 
-    <!-- SCRIPT (facultatif, pour une éventuelle animation au scroll) -->
+    <script src="Main.js"></script>
     <script>
-        // Exemple : animation de scale sur un élément avec id="gif"
-        window.addEventListener('scroll', () => {
-        const scrollValue = window.scrollY;
-        const gif = document.getElementById('gif');
+        window.addEventListener("scroll", () => {
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = window.scrollY / maxScroll;
 
-        if (gif) {
-        gif.style.transform = `scale(${1 + scrollValue * 0.0002})`;
-        }
+            document.getElementById("sequence-scroll").src = getFrame("scrollV1_0",progress);
         });
     </script>
 
