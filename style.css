@@ -33,7 +33,7 @@ body {
 /* CONTENEUR GLOBAL */
 
 .page-wrapper {
-    max-width: 1920px;
+    /*max-width: 1920px;*/
     margin: 0 auto;
 }
 
@@ -51,7 +51,7 @@ body {
 
 .navbar-inner {
     width: 100%;
-    max-width: 1920px;
+    /*max-width: 1920px;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -226,8 +226,8 @@ body {
 }
 
     .image-track img {
-        width: 500px;
-        height: 280px;
+        width: max(500px, 26.0417vw);
+        height: max(280px, 14.5833vw);
         object-fit: cover;
         border: 12px solid var(--blue2);
         background: transparent;
@@ -238,7 +238,7 @@ body {
     }
 
         .image-track img:hover {
-            transform: translateY(-6px) scale(1.03);
+            transform: scale(1.06);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
         }
 

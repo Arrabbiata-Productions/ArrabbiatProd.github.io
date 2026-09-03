@@ -26,7 +26,7 @@
                 <img src="Images/Sequence/scrollV1_0/frame_0001.png"
                      id="sequence-scroll"
                      alt=""
-                     style="max-width: 64px; width: 100%; height: auto;">
+                     style="max-width: 48px; width: 100%; height: auto;">
                 <div class="nav-logo">
                     ARRABBIATA PRODUCTION
                 </div>
@@ -41,11 +41,30 @@
         </nav>
 
         <!-- STUDIO -->
+        <div style="padding-top: 100px"></div>
+        
+        <div class="banner-wrapper">
+
+            <div class="image-banner">
+                <div class="image-track"
+                    id="full-banner">
+                    <img src="Images/WindDrifters/Screen01.png" alt="Capture de jeu 1">
+                    <img src="Images/WindDrifters/Screen02.png" alt="Capture de jeu 2">
+                    <img src="Images/WindDrifters/Fakescreen01.png" alt="Capture de jeu 3">
+                    <img src="Images/WindDrifters/HUDFake02.png" alt="Capture de jeu 4">
+                    <img src="Images/WindDrifters/Screen01.png" alt="Capture de jeu 1 (loop)">
+                    <img src="Images/WindDrifters/Screen02.png" alt="Capture de jeu 2 (loop)">
+                    <img src="Images/WindDrifters/Fakescreen01.png" alt="Capture de jeu 3 (loop)">
+                    <img src="Images/WindDrifters/HUDFake02.png" alt="Capture de jeu 4 (loop)">
+                </div>
+            </div>
+
+        </div>
 
         <section id="studio" class="hero">
 
             <div class="top-codes">
-
+                
             </div>
 
             <div class="hero-content">
@@ -154,7 +173,7 @@
             <!-- TITRE IMAGE (centré) -->
 
             <div class="project-title-image">
-                <img src="Images/WD_TitreVecto.png" alt="WindDrifters">
+                <img src="Images/WindDrifters/WD_TitreVecto.png" alt="WindDrifters">
             </div>
 
             <!-- BANNIÈRE D'IMAGES (sans marge supplémentaire) -->
@@ -162,18 +181,19 @@
             <div class="banner-wrapper">
 
                 <div class="image-banner">
-                    <div class="image-track">
-                        <img src="Images/Screen01.png" alt="Capture de jeu 1">
-                        <img src="Images/Screen02.png" alt="Capture de jeu 2">
-                        <img src="Images/Fakescreen01.png" alt="Capture de jeu 3">
-                        <img src="Images/HUDFake02.png" alt="Capture de jeu 4">
+                    <div class="image-track"
+                        id="WD-banner">
+                        <img src="Images/WindDrifters/Screen01.png" alt="Capture de jeu 1">
+                        <img src="Images/WindDrifters/Screen02.png" alt="Capture de jeu 2">
+                        <img src="Images/WindDrifters/Fakescreen01.png" alt="Capture de jeu 3">
+                        <img src="Images/WindDrifters/HUDFake02.png" alt="Capture de jeu 4">
 
                         <!-- DUPLICATION POUR LOOP -->
 
-                        <img src="Images/Screen01.png" alt="Capture de jeu 1 (loop)">
-                        <img src="Images/Screen02.png" alt="Capture de jeu 2 (loop)">
-                        <img src="Images/Fakescreen01.png" alt="Capture de jeu 3 (loop)">
-                        <img src="Images/HUDFake02.png" alt="Capture de jeu 4 (loop)">
+                        <img src="Images/WindDrifters/Screen01.png" alt="Capture de jeu 1 (loop)">
+                        <img src="Images/WindDrifters/Screen02.png" alt="Capture de jeu 2 (loop)">
+                        <img src="Images/WindDrifters/Fakescreen01.png" alt="Capture de jeu 3 (loop)">
+                        <img src="Images/WindDrifters/HUDFake02.png" alt="Capture de jeu 4 (loop)">
                     </div>
                 </div>
 
@@ -195,7 +215,7 @@
                         </p>
                     </div>
 
-                    <img src="Images/Affiche.png" alt="Affiche du projet WindDrifters">
+                    <img src="Images/WindDrifters/Affiche.png" alt="Affiche du projet WindDrifters">
 
                 </div>
 
@@ -265,12 +285,16 @@
 
     <script src="Main.js"></script>
     <script>
+        
+        // SCROLL ICON LINK CODE
         window.addEventListener("scroll", () => {
             const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
             const progress = window.scrollY / maxScroll;
 
             document.getElementById("sequence-scroll").src = getFrame("scrollV1_0",progress);
         });
+        AddBanner("full-banner",["WindDrifters","FireFlight","default"])
+        AddBanner("WD-banner",["WindDrifters"])
     </script>
 
 </body>
