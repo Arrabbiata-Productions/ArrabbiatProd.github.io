@@ -7,6 +7,8 @@
     --blue2: #111CBA;
     --yellow: #ffeb3b;
     --green: #26a69a;
+    
+    --tags-transparency: 35%;
 }
 
 /* RESET */
@@ -33,7 +35,7 @@ body {
 /* CONTENEUR GLOBAL */
 
 .page-wrapper {
-    max-width: 1920px;
+    /*max-width: 1920px;*/
     margin: 0 auto;
 }
 
@@ -51,7 +53,7 @@ body {
 
 .navbar-inner {
     width: 100%;
-    max-width: 1920px;
+    /*max-width: 1920px;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,7 +72,11 @@ body {
 
 .nav-links {
     justify-content: center;
-    margin-right:205px;
+    margin-right: clamp(
+            0px,
+            calc((100vw - 960px) * 0.2135417),
+            10.6770vw
+    );
     display: flex;
     gap: 40px;
 }
@@ -90,17 +96,19 @@ body {
 /* STUDIO */
 
 .hero {
-    min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 140px 40px 80px 40px;
+    padding: 140px 40px 40px 40px;
     position: relative;
-    margin-right: 410px;
-    margin-left: 410px;
+    margin: 0 clamp(
+            0px,
+            calc((100vw - 700px) * 0.336065),
+            21.3541vw
+    );
 }
 
 .hero-content {
-    max-width: 700px;
+    max-width: max(700px, 36.4583vw);
 }
 
 .hero h1 {
@@ -128,13 +136,17 @@ body {
     align-items: flex-start;
     gap: 60px;
     padding: 40px;
-    margin: 205px;
+    margin: 205px clamp(
+            0px,
+            calc((100vw - 960px) * 0.2135417),
+            10.6770vw
+    );
 }
 
 
 .studio-photo img {
-    width: 600px;
-    height: 700px;
+    width: min(600px, 31.25vw);
+    height: min(700px, 36.4583vw);
     object-fit: cover;
     border: 12px solid var(--blue);
 }
@@ -158,8 +170,8 @@ body {
     /* PHOTO cerles membres */
 
     .member-card img {
-        width: 70px;
-        height: 70px;
+        width: min(3.6458vw, 70px);
+        height: min(3.6458vw, 70px);
         border-radius: 50%;
         object-fit: cover;
     }
@@ -186,13 +198,13 @@ body {
 /* PROJECT SECTION */
 
 .project-section {
-    padding-top: 120px;
+    padding-top: 60px;
 }
 
 /* Winddrifters : titre centr� */
 
 .project-title-image {
-    margin: 120px;
+    margin: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,8 +238,8 @@ body {
 }
 
     .image-track img {
-        width: 500px;
-        height: 280px;
+        width: max(500px, 26.0417vw);
+        height: max(280px, 14.5833vw);
         object-fit: cover;
         border: 12px solid var(--blue2);
         background: transparent;
@@ -235,10 +247,11 @@ body {
         box-sizing: border-box;
         transition: transform 0.4s ease, box-shadow 0.4s ease;
         will-change: transform;
+        cursor: pointer;
     }
 
         .image-track img:hover {
-            transform: translateY(-6px) scale(1.03);
+            transform: scale(1.06);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
         }
 
@@ -275,8 +288,11 @@ body {
 
 .project-we-need-you {
     background: rgba(255, 255, 255, 0.08);
-    margin-right: 410px;
-    margin-left: 410px;
+    margin: 0 clamp(
+            10px,
+            calc(10px + (100vw - 1100px) * 0.4878049),
+            410px
+    );
     border: 12px solid var(--blue2);
 }
 
@@ -307,8 +323,11 @@ body {
 /*SOCIALS*/
 
 .socials-card {
-    margin-right: 410px;
-    margin-left: 410px;
+    margin: 0 clamp(
+            10px,
+            calc(10px + (100vw - 1100px) * 0.4878049),
+            410px
+    );
     display: flex;
     border: 12px solid var(--blue);
     flex-direction: column;
@@ -363,16 +382,22 @@ body {
     color: var(--red);
     text-transform: uppercase;
     padding: 25px 25px 18px;
-    margin-right: 410px;
-    margin-left: 410px;
+    margin: 0 clamp(
+            10px,
+            calc(10px + (100vw - 1100px) * 0.4878049),
+            410px
+    );
 }
 .contact-box {
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.15);
     padding: 25px;
-    max-width: 700px;
-    margin-right: 410px;
-    margin-left: 410px;
+    max-width: 1100px;
+    margin: 0 clamp(
+            10px,
+            calc(10px + (100vw - 1100px) * 0.4878049),
+            410px
+    );
 }
 
 form {
@@ -421,6 +446,25 @@ button {
     button:focus {
         outline: 2px solid var(--red);
         outline-offset: 3px;
+    }
+
+button.alternate {
+    border: 3px solid var(--blue2);
+    border-radius: 30px;
+    background: var(--blue2);
+    color: white;
+
+    display: block;
+    margin: 16px clamp(
+            10px,
+            calc(10px + (100vw - 1100px) * 0.4878049),
+            410px
+    ) 16px auto;
+}
+
+    button.alternate:hover {
+        background: white;
+        color: black;
     }
 
 /* FOOTER */
