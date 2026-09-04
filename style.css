@@ -35,7 +35,6 @@ body {
 /* CONTENEUR GLOBAL */
 
 .page-wrapper {
-    /*max-width: 1920px;*/
     margin: 0 auto;
 }
 
@@ -53,7 +52,6 @@ body {
 
 .navbar-inner {
     width: 100%;
-    /*max-width: 1920px;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -167,7 +165,7 @@ body {
     gap: 20px;
 }
 
-    /* PHOTO cerles membres */
+    /* PHOTO cercles membres */
 
     .member-card img {
         width: min(3.6458vw, 70px);
@@ -201,7 +199,7 @@ body {
     padding-top: 60px;
 }
 
-/* Winddrifters : titre centr� */
+/* WindDrifters : titre centre */
 
 .project-title-image {
     margin: 60px;
@@ -216,7 +214,7 @@ body {
         display: block;
     }
 
-/* BANNIERE D'IMAGES */
+/* BANNIÈRE D'IMAGES */
 
 .banner-wrapper {
 
@@ -267,7 +265,7 @@ body {
     }
 }
 
-/* PROJECTS : plus vertical (empil�) */
+/* PROJECTS : plus vertical (empile) */
 
 .projects {
     display: flex;
