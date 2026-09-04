@@ -33,14 +33,14 @@
             black 100%
     );
 
-    -webkit-mask-image: linear-gradient(
-            105deg,
-            transparent 0%,
-            transparent 52%,
-            rgba(0, 0, 0, 0.15) 57%,
-            black 70%,
-            black 100%
-    );
+    /*-webkit-mask-image: linear-gradient(*/
+    /*        105deg,*/
+    /*        transparent 0%,*/
+    /*        transparent 52%,*/
+    /*        rgba(0, 0, 0, 0.15) 57%,*/
+    /*        black 70%,*/
+    /*        black 100%*/
+    /*);*/
 }
 /* TEXT */
 
