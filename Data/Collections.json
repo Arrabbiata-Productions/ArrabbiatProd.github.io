@@ -2,7 +2,11 @@
   "WindDrifters": [
     "Images/WindDrifters/HUDFake02.png",
     "Images/WindDrifters/Screen01.png",
-    "Images/WindDrifters/Screen02.png"
+    "Images/WindDrifters/Screen02.png",
+    "Images/WindDrifters/Screen_IG_01.png",
+    "Images/WindDrifters/Screen_IG_02.png",
+    "Images/WindDrifters/Screen_IG_03.png",
+    "Images/WindDrifters/Screen_IG_04.png"
   ],
   "FireFlight": [],
   "default": []
